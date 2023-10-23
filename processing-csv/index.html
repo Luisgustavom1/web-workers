@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Worker</title>
+  <style>
+    .form-group {
+      margin: 10px;
+    }
+  </style>
+</head>
+<body>
+  <form action="#" id="form">
+    <label class="form__textfield">
+      Description
+      <input type="text" name="description" id="description">
+    </label>
+    <label class="form__textfield">
+      CSV file
+      <input type="file" accept=".csv" name="csv-file" id="csv-file">
+    </label>
+    <label class="form__textfield">
+      Should use worker threads
+      <input type="checkbox" accept=".csv" name="worker" id="worker">
+    </label>
+    <section>
+      <input type="submit" id="button" value="Search">
+      <input type="reset" value="Reset">
+    </section>
+    <section>
+      <output id="file-size"></output>
+    </section>
+    <section>
+      <label for="progress">Processing progress:</label>
+      <progress id="progress" name="progress" value="0" max="100%"></progress>
+    </section>
+    <section>
+      <output id="debug"></output>
+    </section>
+  </form>
+</body>
+</html>
